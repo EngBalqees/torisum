@@ -27,22 +27,13 @@ function Header() {
                             </ul>
                         </div>
                         <div className="social">
-                            <div className="language">
-                                <div className="dropdown">
-                                    <button onClick={handleOpen}>عر</button>
-                                    {open ? (
-                                        <ul className="menu">
-                                            <li className="menu-item">
-                                                <button>عر</button>
-                                            </li>
-                                            <li className="menu-item">
-                                                <button>Eng</button>
-                                            </li>
-                                        </ul>
-                                    ) : null}
-                                </div>
-                            </div>
                             <div className="socialmedia">
+                                <ul>
+                                    <li><a href=""><img src='facebook.png'/></a></li>
+                                    <li><a href=""><img src='twitter.png'/></a></li>
+                                    <li><a href=""><img src='linkedin.png'/></a></li>
+                                    <li><a href=""><img src='insta.png'/></a></li>
+                                </ul>
 
                             </div>
 

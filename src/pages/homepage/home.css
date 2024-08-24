@@ -13,8 +13,23 @@ body {
     gap: 80px;
 }
 
-.home .container {}
+.home .container {
 
+}
+
+.slider{
+    background-image: url('slider.jpg');
+    z-index: 9;
+    height:700px;
+    background-size: cover;
+}
+.slider .container{
+    width: 30%;
+    background: rgb(255 255 255 / 80%);
+    height: 700px;
+   margin-right: 0;
+
+}
 .why{
     padding-top: 20px;
     padding-bottom: 30px;
@@ -64,6 +79,55 @@ body {
     font-size: 18px;
     color: #959595;
     padding-bottom: 15px;
+}
+.jour{
+    width: 100%;
+    background-image: url('background.jpg');
+    margin-bottom: 45px;
+}
+.jour .row{
+    display: flex;
+    padding: 30px 15px;
+    justify-content: space-between;
+    text-align: right;
+}
+.jour .btn{
+    margin-top: 80px;
+    display: block;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    padding: 5px 25px;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #fb000d;
+    text-align: center;
+}
+.jour  .jourdetails h1{
+    font-size: 38px;
+    font-weight: 800;
+    color: #FFCB05;
+}
+.jourdetails span{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+.jourdetails p{
+    padding-top: 10px;
+    color: #FFCB05;
+    font-size: 18px;
+}
+.journies{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.journies .container{
+    padding: 25px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .about {
     background-image: url('background.jpg');

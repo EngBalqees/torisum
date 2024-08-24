@@ -1,10 +1,41 @@
 import React from "react";
 import "../homepage/home.css";
+import DotSlider from "../../components/slider/slider";
+import CarouselBox from "../../components/carousel/caro";
 
 function Home() {
+    const slides = [
+        {
+          title: ['رحلات تركيا'],
+          subtitle: ['فتحية واسطنبول'],
+          description: ['استكشف فتحية واسطنبول في 8 أيام'],
+        },
+        {
+          title: ['رحلات تركيا'],
+          subtitle: ['فتحية'],
+          description: ['رحلات فتحية 4 أيام،5 أيام،6 أيام على طيران بيجاسوس'],
+        },
+        {
+          title: ['رحلات تركيا'],
+          subtitle: ['بودروم'],
+          description: ['رحلات بودروم 4 أيام،5 أيام،6 أيام على طيران بيجاسوس'],
+        },
+        {
+            title: ['رحلات مصر'],
+            subtitle: ['الغردقة مع 5 رحلات داخلية'],
+            description: [' (رحلات داحلية مجاناً 5)|رحلات الغردقة على متن اير كايرو كل ثلاثاء وجمعة|8أيام 7ليالي'],
+          }
+      ];
+      
     return (
+        
         <>
             <main>
+                <div className="slider">
+                    <div className="container">
+                    <DotSlider slides={slides} />
+                    </div>
+                </div>
                 <div className="why">
                     <div className="container">
                         <h2>لماذا شركة كراون</h2>
@@ -25,7 +56,7 @@ function Home() {
                                 <a href=""><img src="why2.png" /></a>
                                 <h4>التمثيل العالمي</h4>
                                 <span>تفتخر كراون للسياحة والسفر بوجودها في تركيا وماليزيا مع مكاتبنا المخصصة وخبراء السفر المدربين تدريباً مهنياً ،
-                                     بدعم من مكاتب تمثيلية في جميع أنحاء العالم تقدم الدعم للعملاء اثناء رحلتهم</span>
+                                    بدعم من مكاتب تمثيلية في جميع أنحاء العالم تقدم الدعم للعملاء اثناء رحلتهم</span>
                             </div>
                             <div className="item">
                                 <a href=""><img src="why4.png" /></a>
@@ -35,6 +66,26 @@ function Home() {
                         </div>
                     </div>
 
+                </div>
+                <div className="jour">
+                    <div className="container">
+                        <div className="row">
+                            <button className="btn">التفاصيل</button>
+                            <div className="jourdetails">
+                                <h1>فتحية و اسطنبول</h1>
+                                <span> اسكتشف فتحية واسطنبول 8 ايام</span>
+                                <p>
+                                    ابتداء من
+                                    <span>۵۷٦ د.ا</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="journies">
+                    <div className="container">
+                        <h2>الرحلات السياحية</h2>
+                    <CarouselBox />
+                    </div>
                 </div>
                 <div className="about">
                     <div className="container">
