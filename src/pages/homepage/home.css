@@ -130,7 +130,7 @@ body {
     margin-left: auto;
 }
 .about {
-    background-image: url('background.jpg');
+    background-image: url('/public/background.jpg');
 }
 
 .about .container {
